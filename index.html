@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Aditional information -->
+    </head>
+    <body>
+        <div id="container">
+            <h1>Tic tac toe</h1>
+            <div id="menuBar">
+                <div id="winsBox" class="menuBox">
+                    <h2>Wins</h2>
+                    <p id="winsValue">0</p>
+                </div>
+                <div id="losesBox" class="menuBox">
+                    <h2>Loses</h2>
+                    <p id="losesValue">0</p>
+                </div>
+                <div id="restartBox" class="menuBox" onclick="restartTapped()">
+                    <img src="restart.svg" alt="Restart button image" id="restartButton">
+                </div>
+                <div id="timeBox" class="menuBox">
+                    <h2>Time</h2>
+                    <p id="timeValue">00:00</p>
+                </div>
+                <div id="turnBox" class="menuBox">
+                    <h2>Turn</h2>
+                    <p id="turnValue">X</p>
+                </div>
+            </div>
+            <div id="board">
+                <div class="boardBox" id="square00" onclick="boardTapped('square00')">
+                    <div></div>
+                </div>
+                <div class="boardBox" id="square01" onclick="boardTapped('square01')">
+                    <div></div>
+                </div>
+                <div class="boardBox" id="square02" onclick="boardTapped('square02')">
+                    <div></div>
+                </div>
+                <div class="boardBox" id="square10" onclick="boardTapped('square10')">
+                    <div></div>
+                </div>
+                <div class="boardBox" id="square11" onclick="boardTapped('square11')">
+                    <div></div>
+                </div>
+                <div class="boardBox" id="square12" onclick="boardTapped('square12')">
+                    <div></div>
+                </div>
+                <div class="boardBox" id="square20" onclick="boardTapped('square20')">
+                    <div></div>
+                </div>
+                <div class="boardBox" id="square21" onclick="boardTapped('square21')">
+                    <div></div>
+                </div>
+                <div class="boardBox" id="square22" onclick="boardTapped('square22')">
+                    <div></div>
+                </div>
+            </div>
+    </body>
+    <script src="modernizr-custom.js"></script>
+    <script src="scripts.js"></script>
+</html>
